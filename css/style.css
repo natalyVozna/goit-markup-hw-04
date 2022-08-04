@@ -151,11 +151,19 @@ p {
   padding: 94px 0;
 }
 
-.hero {
+.overlay {
   padding: 200px 0;
-  border: 1px solid #ececec;
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  background: #2f303a;
   text-align: center;
 }
 
@@ -262,6 +270,33 @@ p {
 
 .advantages .item:not(:last-child) {
   margin-right: 30px;
+}
+
+.advantages .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  /* background-size: contain; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
 }
 
 .advantages-title {
