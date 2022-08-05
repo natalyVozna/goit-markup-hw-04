@@ -132,6 +132,9 @@ p {
 }
 
 .contacts .link {
+  display: flex;
+  align-items: center;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-style: normal;
@@ -144,6 +147,27 @@ p {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
+
+.icon-link {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+.icon-meil {
+  width: 16px;
+  height: 12px;
 }
 
 /* Main */
@@ -276,11 +300,12 @@ p {
   display: block;
   content: '';
   height: 120px;
-  /* background-size: contain; */
+  background-size: 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .icon-antenna::before {
@@ -306,6 +331,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
