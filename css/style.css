@@ -149,7 +149,7 @@ p {
   color: var(--accent-color);
 }
 
-.icon-link {
+.contacts .icon-link {
   margin-right: 10px;
 
   fill: currentColor;
@@ -380,10 +380,52 @@ p {
 }
 
 .team-job {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.social-links .item + .item {
+  margin-left: 10px;
+}
+
+.social-item .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: all 300ms;
+}
+
+.social-links .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item .link:hover,
+.social-item .link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  transition: all 300ms;
+}
+
+.social-item .icon-link {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* Footer */
