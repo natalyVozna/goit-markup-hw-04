@@ -213,7 +213,7 @@ p {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .button.shadow {
@@ -226,7 +226,7 @@ p {
   font-weight: 700;
   line-height: 1.87;
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .button.primary:hover,
@@ -234,7 +234,7 @@ p {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .button.secondary {
@@ -243,7 +243,7 @@ p {
   font-weight: 500;
   line-height: 1.6;
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .button.secondary:hover,
@@ -252,7 +252,7 @@ p {
   background-color: var(--accent-color);
   color: var(--white-color);
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .section-title {
@@ -391,11 +391,14 @@ p {
 .social-links {
   display: flex;
   align-items: center;
-  padding: 0 32px;
 }
 
 .social-links .item + .item {
   margin-left: 10px;
+}
+
+.team-box .social-links {
+  padding: 0 32px;
 }
 
 .social-item .link {
@@ -407,7 +410,12 @@ p {
   height: 44px;
   border-radius: 50%;
 
-  transition: all 300ms;
+  transition: all 200ms;
+}
+
+.social-item.dark .link {
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social-links .social-item:not(:last-child) {
@@ -419,7 +427,7 @@ p {
   background-color: var(--accent-color);
   color: var(--white-color);
 
-  transition: all 300ms;
+  transition: all 200ms;
 }
 
 .social-item .icon-link {
@@ -428,10 +436,58 @@ p {
   fill: currentColor;
 }
 
+/* Clients */
+.clients {
+  display: flex;
+}
+
+.clients .item {
+  width: 170px;
+}
+
+.clients .item + .item {
+  margin-left: 30px;
+  /* width: calc((100% - 60px) / 6); */
+}
+
+.clients .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-color);
+  padding: 16px 0;
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+
+  transition: all 200ms;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+
+  transition: all 200ms;
+}
+
+.clients .link-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* Footer */
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.col-contact {
+  margin-right: 70px;
 }
 
 .contacts-footer {
@@ -459,6 +515,19 @@ p {
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--accent-color);
+}
+
+/* Footer social */
+.col-social .title-social {
+  margin-bottom: 20px;
+  padding-top: 12px;
+
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /* PORTFOLIO */
