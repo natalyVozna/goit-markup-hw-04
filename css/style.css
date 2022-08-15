@@ -206,17 +206,16 @@ p {
 }
 
 .button {
-  padding: 10px 32px;
   border: none;
   border-radius: 4px;
 
   font-size: 16px;
-  align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .button.primary {
+  padding: 10px 32px;
   background-color: var(--accent-color);
   color: var(--white-color);
   font-weight: 700;
@@ -232,6 +231,7 @@ p {
 }
 
 .button.secondary {
+  padding: 6px 22px;
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
   font-weight: 500;
@@ -265,8 +265,8 @@ p {
 }
 
 .works .item {
-  /* display: block; */
   width: 370px;
+  display: flex;
 }
 
 .works .item:not(:last-child) {
@@ -276,7 +276,7 @@ p {
 /* Advantages */
 .advantages {
   display: flex;
-  /* flex-wrap: wrap; */
+  padding-bottom: 0;
 }
 
 .advantages .item {
