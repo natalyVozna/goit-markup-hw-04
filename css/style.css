@@ -27,20 +27,6 @@ body {
 }
 
 /* Утилиты */
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 2px solid tomato; */
-}
 
 h1,
 h2,
@@ -48,8 +34,39 @@ h3,
 h5,
 h6,
 p {
+  /* padding-top: 0; */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.list {
   padding: 0;
   margin: 0;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Header */
